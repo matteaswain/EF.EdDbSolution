@@ -26,14 +26,17 @@ namespace EF.EdDb
 
 
 // Query Example // Joined Major table fpr Students who live in Ky, calling for name/major columns
+
             //var studentsWithMajor = from s in context.Students
             //                        join m in context.Majors
             //                        on s.MajorId equals m.Id
             //                        where s.StateCode == "KY"
             //                        orderby s.Lastname
             //                        select new { s.Firstname, s.Lastname, Major = m.Description };
-                                                                     
-            //foreach( var s in studentsWithMajor)
+
+// query syntax is not executed when encountered but when the var is used in a statment
+// 
+            //foreach( var s in studentsWithMajor) // var studentWithMajor used in a statement
             //{
             //    Console.WriteLine($"{s.Firstname} {s.Lastname} || {s.Major} ");
             //}   
